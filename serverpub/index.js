@@ -9,7 +9,8 @@ async function run() {
 
     while (true) {
         console.log(`[${new Date().toLocaleString()}] Enviando um envelope de mensagem com várias partes`)
-        await sock.send(["kitty cats", "Meow!"])
+        await sock.send(["cat", "Miiaaaauuu!"])
+        await sock.send(["relâmpago mcqueen", "Katchau!"])
         await new Promise(resolve => { setTimeout(resolve, 5000) })
     }
 }
